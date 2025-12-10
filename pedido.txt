@@ -1,0 +1,80 @@
+package com.ut4_POO;
+
+public class Pedido {
+	private String codPedido = "";
+	// lista de articulos (muchos articulos...)
+	
+	private String fechaPedido = "";
+	private float precioTotalPedido = 0.0f;
+	private int numArtPedidos = 0;
+	private float pesoPedido = 0.0f;
+	private Persona persona;
+	
+	/* calcular el precio total
+	
+
+	 */
+	
+	/* calcular el pesoPedido
+	
+
+	 */
+	
+	/* añadir el producto
+	
+
+	 */
+	
+	/* crear Pedido
+	
+
+	 */
+	
+	public boolean crearPedido () {
+		boolean retorno = false;
+		
+		return retorno;
+	}
+	
+	public boolean cerrarPedido () {
+		boolean retorno = false;
+		
+		return retorno;
+	}
+	
+	public String getFechaPedido() {
+		return fechaPedido;
+	}
+
+	public void setFechaPedido(String fechaPedido) {
+		this.fechaPedido = fechaPedido;
+	}
+
+	public float getPrecioTotalPedido() {
+		return precioTotalPedido;
+	}
+
+	public void setPrecioTotalPedido(float precioTotalPedido) {
+		this.precioTotalPedido = precioTotalPedido;
+	}
+
+	public int getNumArtPedidos() {
+		return numArtPedidos;
+	}
+
+	public void setNumArtPedidos(int numArtPedidos) {
+		this.numArtPedidos = numArtPedidos;
+	}
+
+	public float getPesoPedido() {
+		return pesoPedido;
+	}
+
+	public void setPesoPedido(float pesoPedido) {
+		this.pesoPedido = pesoPedido;
+	}
+
+	public String getCodPedido() {
+		return codPedido;
+	}
+}

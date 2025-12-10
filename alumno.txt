@@ -1,0 +1,31 @@
+public class Alumno extends Persona{
+
+	protected int nia;
+	Direccion [] direccion = new Direccion [5];
+	private Parentesco padres;
+	
+	public Alumno(String dni, String name, String apell1, String apell2, String fecNac,int nia, Parentesco parentesco) {
+		super(dni, name, apell1, apell2, fecNac, parentesco);
+		// TODO Auto-generated constructor stub
+	}
+
+	public Alumno(String dni, int nia) {
+		super(dni);
+		this.nia = nia;
+		// TODO Auto-generated constructor stub
+	}	
+	
+	public int getNia() {
+		return nia;
+	}
+
+	public void setNia(int nia) {
+		this.nia = nia;
+	}
+	
+	@Override
+	public String toString() {
+		return "Alumno [nia=" + nia + "] \n"
+				+ "Persona" + super.toString();
+	}
+}

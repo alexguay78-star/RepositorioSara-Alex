@@ -1,0 +1,76 @@
+Relaciones en UML
+
+Asociación
+
+Es una relación general entre dos clases.
+Indica que una conoce o usa a la otra, pero no hay pertenencia.
+Los objetos pueden existir por separado.
+
+Agregación
+
+Es una asociación más fuerte.
+Una clase tiene o agrupa a otras, pero las partes son independientes.
+Si el “todo” desaparece, las partes pueden seguir existiendo.
+rombo vacio
+
+Composición
+
+Es la relación más fuerte.
+Una clase contiene a otras partes que dependen totalmente del "todo".
+Si el “todo” se elimina, las partes también desaparecen.
+rombo lleno
+
+Reflexiva
+Los objetos que participan en la relación pertenecen a la misma clase, es decir, los objetos origen y destino 
+son de la misma clase.
+El jefe subordina empleados pero tmb es empleado, una misma entidad unida con una relacion asi misma.
+
+
+Propiedades de las asociaciones
+• multiplicidad • navegabilidad • rol
+
+• Multiplicidad (cardinalidad min max)
+Es el número mínimo y máximo de instancias de una clase con el que se puede relacionar una instancia 
+de la otra clase de la relación.
+
+• Navegabilidad
+Indica si una instancia de una clase conoce la existencia de una instancia de la otra clase.
+
+	-Unidireccional:solo una de las dos instancias(objeto, parte) tiene constancia de la existencia de la otra.
+	-￿Bidireccional: las dos instancias tienen constancia de la existencia de la otra.
+
+• Rol
+Añade información contextual que debe ayudar al lector a comprender la relación.
+
+
+Traduciendo a código
+- Navegabilidad:  la navegabilidad nos dice en qué clase debe haber una referencia a objetos de la otra clase que participa en la relación. 
+		* Unidireccional: la clase conocedora será la única que tenga una referencia a la otra clase. *->
+		* Bidireccional: las dos clases de la asociación tendrán una referencia a la otra clase. <->
+
+- ￿Multiplicidad: la multiplicidad puede tener diferentes formatos (por ejemplo, número exacto, rango de valores, etc.), 
+la referencia a la otra clase dentro de la clase conocedora puede implementarse de muchas maneras: un objeto o más de uno (coleccion de objetos que permita almacenar más de un objeto, por ejemplo: un array, una pila, una cola, una lista, etc.).
+
+
+￿- Rol: esta propiedad nos ayuda a determinar dos aspectos de la implementación. Por un lado, nos da a conocer cómo ha llamado el programador
+ al atributo que hace referencia a la otra clase. Por otro lado, también nos indica el nivel de acceso de dicho atributo. 
+
+
+
+
+Asociación binaria o agregación unidireccional (codificación): La tarjeta puede ser null ya que la tarjeta puede que no exista aún.
+card = cardParam está pasandole los parametros a ese espacio de memoria. 
+
+
+Clases y métodos abstractos
+Una clase abstracta tiene el fin de crear otras clases a partir de ella. 
+No se crea un objeto de una clase abstracta "new()".
+
+
+Interfaces
+todas la platilla debe implementar los métodos y atributos que nos permiten contruir clases a partir de ella.
+permirte que una clase puedan usar mas interfaces y que sea mas rica.
+implements
+
+
+

@@ -1,0 +1,56 @@
+ para imprimirlo en principal tengo todo esto:
+package com.ut4_POO;
+
+public class Principal {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		//Persona per1 = new Persona ("12345678z", "Pepito", "Apellido primero","Segundo apellido","07/03/2007", Parentesco.padre);
+		
+		//System.out.println("Per1: " + per1.toString());
+		/*
+		//per1.setName("656565");
+		
+		System.out.println(per1.toString());
+		System.out.println("El nombre de persona 1: " + per1.getName());
+		
+		System.out.println("Número hash 1: " + per1.hashCode());
+		
+		Persona per2 = new Persona("6565665");
+		System.out.println("Per2: " + per2.toString());
+		System.out.println("Número hash 2: " + per2.hashCode());
+		
+		//System.out.println("Son iguales per1 a per2: " + per1.equals(per1));
+		
+		Alumno alu1 = new Alumno ("12345768z", "Pepito", "Apellido primero","Segundo apellido","Fecha de nacimiento", 12, Parentesco.hija);
+		System.out.println("Alu1: " + alu1.toString());
+		*/
+		Trabajador tra1 = new Trabajador ("123457689", "Pepito", "Apellido primero","Segundo apellido","Fecha de nacimiento", 12, Parentesco.madre);
+		System.out.println("Tra1: " + tra1.toString());
+		
+		tra1.setNrp(555);
+		System.out.println("Tra1: " + tra1.toString());
+		
+		tra1.setName("Juanito");
+		System.out.println("Tra1: " + tra1.toString());
+		System.out.println("Tra1 nombre : " + tra1.getName());
+		
+		
+		/*
+		tra1.direccion1.setCalle("Tapia");
+		System.out.println("La primera dirección de tra1 es: " + tra1.direccion1.getCalle());
+		
+		tra1.direccion2.setCalle("Antonio");
+		System.out.println("La segunda dirección de tra1 es: " + tra1.direccion2.getCalle());
+		
+		tra1.direccion1.crearDireccion("Tapia 1", 15, "03005", "Ibi", "Alicante");
+		System.out.println("Datos de la direccion: " + tra1.direccion1.toString());
+		
+			
+		Profesor prof1 = new Profesor("12345678z", "Lucas", "Apell1", "Apell2", "01/03/2000", 201, Parentesco.padre, "Informática");
+		System.out.println(prof1.toString());
+		prof1.recorrerDatos();
+		*/
+	}
+}
